@@ -1,7 +1,11 @@
+import Hero from "./components/hero";
+import Story from "./components/story";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="block font-biroScriptUS">Hello world</h1>
+    <main className="flex min-h-screen flex-col pt-14">
+      <Hero />
+      <Story />
     </main>
   );
 }
