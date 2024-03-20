@@ -20,18 +20,16 @@ const MindMap = () => {
   return (
     <section className="container pt-[60px] md:pt-20 lg:pt-[120px]">
       <div className="flex flex-col items-center">
-        <div className="mb-6">
-          <Title>Mind map</Title>
-        </div>
+        <Title>Mind map</Title>
         <div className="mb-6 md:grid md:grid-cols-2 md:gap-6 md:justify-center">
           {mindMapItems.map((item, index) => {
             return (
               <MindMapItem key={index} text={item.text} title={item.title} />
             );
           })}
-          <div className="w-[216px] h-[242px] md:w-[284px] lg:w-[504px] lg:h-[480px] px-3 py-6 md:p-6 bg-rose-500 rounded-xl md:rounded-2xl lg:rounded-3xl flex-col justify-between inline-flex">
+          <div className="w-[216px] h-[242px] md:w-[284px] lg:w-[504px] lg:h-[480px] px-3 py-6 md:p-6 bg-accent rounded-xl md:rounded-2xl lg:rounded-3xl flex-col justify-between inline-flex">
             <div className="p-3 origin-top-left rotate-180 justify-center items-center gap-2.5 inline-flex" />
-            <div className="w-48 lg:w-[456px] text-white text-[32px] lg:text-[64px] font-black uppercase leading-8 lg:leading-[64px]">
+            <div className="w-48 lg:w-[456px] text-primary text-[32px] lg:text-[64px] font-black uppercase leading-8 lg:leading-[64px]">
               Learn
               <br />
               more
@@ -44,11 +42,11 @@ const MindMap = () => {
         <div className="flex gap-12 md:hidden">
           <button
             type="button"
-            className="text-white text-2xl font-normal font-biroScript leading-normal"
+            className="text-primary text-2xl font-normal font-biroScript leading-normal"
           >
             Prev
           </button>
-          <button className="text-white text-2xl font-normal font-biroScript leading-normal">
+          <button className="text-primary text-2xl font-normal font-biroScript leading-normal">
             Next
           </button>
         </div>
