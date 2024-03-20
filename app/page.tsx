@@ -1,6 +1,7 @@
-import Hero from "./components/hero";
-import MindMap from "./components/mind-map";
-import Story from "./components/about";
+import Hero from "../components/hero";
+import MindMap from "../components/mind-map";
+import Story from "../components/about";
+import Faq from "../components/faq";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Story />
       <MindMap />
+      <Faq />
     </main>
   );
 }
