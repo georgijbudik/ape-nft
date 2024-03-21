@@ -1,4 +1,6 @@
+"use client";
 import MindMapItem from "./ui/mind-map-item";
+import Pagination from "./ui/pagination";
 import Title from "./ui/title";
 
 const mindMapItems = [
@@ -17,11 +19,14 @@ const mindMapItems = [
 ];
 
 const MindMap = () => {
+  const prevImage = () => {};
+
+  const nextImage = () => {};
   return (
     <section className="container pt-[60px] md:pt-20 lg:pt-[120px]">
       <div className="flex flex-col items-center">
         <Title>Mind map</Title>
-        <div className="mb-6 md:grid md:grid-cols-2 md:gap-6 md:justify-center">
+        <div className="md:grid md:grid-cols-2 md:gap-6 md:justify-center">
           {mindMapItems.map((item, index) => {
             return (
               <MindMapItem key={index} text={item.text} title={item.title} />
@@ -38,17 +43,8 @@ const MindMap = () => {
             </div>
           </div>
         </div>
-
-        <div className="flex gap-12 md:hidden">
-          <button
-            type="button"
-            className="text-primary text-2xl font-normal font-biroScript leading-normal"
-          >
-            Prev
-          </button>
-          <button className="text-primary text-2xl font-normal font-biroScript leading-normal">
-            Next
-          </button>
+        <div className="md:hidden">
+          <Pagination prevImage={prevImage} nextImage={nextImage} />
         </div>
       </div>
     </section>
