@@ -1,4 +1,17 @@
 import Image from "next/image";
+import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
+
+const titles = [
+  {
+    title: "Have no limits",
+  },
+  {
+    title: "Destroy stereotypes",
+  },
+  {
+    title: "Break rules",
+  },
+];
 
 const About = () => {
   return (
@@ -24,7 +37,7 @@ const About = () => {
           </p>
         </div>
         <div className="w-[216px] md:w-[269px] lg:w-[417px] flex flex-col items-center mb-10 md:mb-0">
-          <svg className="w-6 h-6 stroke-primary md:mb-6 lg:mb-9">
+          <svg className="w-6 h-6 stroke-primary mb-4 md:mb-6 lg:mb-9">
             <use xlinkHref="/sprite/sprite.svg#icon-cross"></use>
           </svg>
           <p className="text-center text-primary text-xs md:text-base lg:text-2xl font-normal font-messinaSans uppercase leading-[14px] md:leading-[19px] lg:leading-[29px]">
@@ -40,7 +53,9 @@ const About = () => {
           className="w-[216px] h-[292px] md:w-[313px] md:h-[422px] lg:w-[492px] lg:h-[662px] md:absolute md:bottom-[-36px] lg:bottom-[-40px] md:right-[88px]"
         />
       </section>
-      <div className="h-[52px] pt-1.5 pb-2 bg-accent md:mt-9 lg:mt-10"></div>
+      <div className="h-[52px] lg:h-[86px] pt-1.5 pb-[9px] bg-accent md:mt-9 lg:mt-10">
+        <InfiniteMovingCards items={titles} />
+      </div>
     </>
   );
 };
