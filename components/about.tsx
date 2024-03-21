@@ -38,7 +38,7 @@ const About = () => {
         </div>
         <div className="w-[216px] md:w-[269px] lg:w-[417px] flex flex-col items-center mb-10 md:mb-0">
           <svg className="w-6 h-6 stroke-primary mb-4 md:mb-6 lg:mb-9">
-            <use xlinkHref="/sprite/sprite.svg#icon-cross"></use>
+            <use xlinkHref="/icons/sprite.svg#icon-cross"></use>
           </svg>
           <p className="text-center text-primary text-xs md:text-base lg:text-2xl font-normal font-messinaSans uppercase leading-[14px] md:leading-[19px] lg:leading-[29px]">
             EACH ARTWORK IN THE COLLECTION TELLS A STORY OF ONE JOURNEY. ARTS

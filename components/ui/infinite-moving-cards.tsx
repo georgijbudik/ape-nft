@@ -93,7 +93,7 @@ export const InfiniteMovingCards = ({
               {item.title}
             </h3>
             <svg className="w-8 h-8 stroke-primary">
-              <use xlinkHref="/sprite/sprite.svg#icon-cross"></use>
+              <use xlinkHref="/icons/sprite.svg#icon-cross"></use>
             </svg>
           </li>
         ))}

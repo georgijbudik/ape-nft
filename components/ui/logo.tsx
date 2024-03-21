@@ -1,7 +1,7 @@
 const Logo = () => {
   return (
     <svg className="w-12 h-8 fill-secondary">
-      <use xlinkHref="/sprite/sprite.svg#icon-logo"></use>
+      <use xlinkHref="/icons/sprite.svg#icon-logo"></use>
     </svg>
   );
 };
