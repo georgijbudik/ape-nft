@@ -32,7 +32,7 @@ const faqItems = [
 ];
 
 const Faq = () => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState("1");
   return (
     <section className="container pt-[60px] md:pt-20 lg:pt-[120px]">
       <div className="flex justify-center">
@@ -43,6 +43,7 @@ const Faq = () => {
         collapsible
         className="w-full flex flex-col gap-2 md:gap-[18px]"
         onValueChange={(value) => setValue(value)}
+        defaultValue="1"
       >
         {faqItems.map((item, index) => {
           return (
