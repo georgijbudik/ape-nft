@@ -35,7 +35,7 @@ const FaqAccordionItem = ({
       <AccordionTrigger className="flex items-start">
         <span
           className={cn(
-            "text-accent text-xs md:text-base lg:text-2xl font-normal font-biroScriptUS leading-[24px] md:leading-[36px] lg:leading-[56px] mr-2 md:mr-[31px]",
+            "text-accent flex-shrink-0 text-xs md:text-base lg:text-2xl font-normal font-biroScriptUS leading-[24px] md:leading-[36px] lg:leading-[56px] mr-2 md:mr-[21px]",
             isSelected && "text-primary"
           )}
         >

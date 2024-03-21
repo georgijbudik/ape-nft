@@ -8,7 +8,7 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col pt-[54px] pb-6 md:pb-10 md:px-4 lg:pt-4">
+    <main className="flex min-h-screen flex-col pt-[54px] pb-6 md:pb-10 lg:pt-4">
       <Hero />
       <Story />
       <MindMap />
