@@ -35,10 +35,11 @@ const MindMap = () => {
           href="https://boredapeyachtclub.com/"
           target="blank"
           referrerPolicy="no-referrer"
+          className="group"
         >
           <div className="w-[216px] h-[242px] md:w-[284px] lg:w-[504px] lg:h-[480px] px-3 py-6 md:p-6 bg-accent rounded-xl md:rounded-2xl lg:rounded-3xl flex-col justify-between inline-flex">
             <div className="flex justify-end pr-3 lg:pr-0">
-              <svg className="w-[36px] h-[36px] lg:w-12 lg:h-12 stroke-primary">
+              <svg className="w-[36px] h-[36px] lg:w-12 lg:h-12 stroke-primary group-hover:translate-y-[-15px] group-hover:translate-x-[12px] transition-all duration-300">
                 <use xlinkHref="/icons/sprite.svg#icon-arrow"></use>
               </svg>
             </div>
@@ -66,10 +67,11 @@ const MindMap = () => {
               href="https://boredapeyachtclub.com/"
               target="blank"
               referrerPolicy="no-referrer"
+              className="group"
             >
               <div className="w-[216px] h-[242px] md:w-[284px] lg:w-[504px] lg:h-[480px] px-3 py-6 md:p-6 bg-accent rounded-xl md:rounded-2xl lg:rounded-3xl flex-col justify-between inline-flex">
                 <div className="flex justify-end pr-3 lg:pr-0">
-                  <svg className="w-[36px] h-[36px] lg:w-12 lg:h-12 stroke-primary">
+                  <svg className="w-[36px] h-[36px] lg:w-12 lg:h-12 stroke-primary group-hover:translate-y-[-15px] transition-all duration-300">
                     <use xlinkHref="/icons/sprite.svg#icon-arrow"></use>
                   </svg>
                 </div>
