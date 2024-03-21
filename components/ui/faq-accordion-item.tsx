@@ -6,7 +6,7 @@ import {
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-interface FaqAccordionItemProps {
+interface IFaqAccordionItemProps {
   index: number;
   question: string;
   answer: string;
@@ -20,7 +20,7 @@ const FaqAccordionItem = ({
   answer,
   value,
   path,
-}: FaqAccordionItemProps) => {
+}: IFaqAccordionItemProps) => {
   const indexToString = index.toString();
   const isSelected = value === indexToString;
 

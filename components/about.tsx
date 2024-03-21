@@ -5,7 +5,7 @@ const About = () => {
     <>
       <section className="container pt-[60px] md:pt-20 md:relative lg:pt-[120px]">
         <div className="md:flex md:justify-between md:mb-[68px] lg:mb-14">
-          <div className="w-[216px] md:w-[269px] lg:w-[538px] mb-[6px]">
+          <h2 className="w-[216px] md:w-[269px] lg:w-[538px] mb-[6px]">
             <span className="text-primary text-[40px] md:text-6xl lg:text-[120px] font-black uppercase leading-10 md:leading-[60px] lg:leading-[120px]">
               a Story that started with
             </span>
@@ -15,7 +15,7 @@ const About = () => {
               <br className="md:hidden" />
               ape
             </span>
-          </div>
+          </h2>
           <p className="w-[216px] md:w-[275px] lg:w-[409px] mb-9 md:mb-0 text-right text-primary text-base lg:text-2xl font-normal font-messinaSans uppercase leading-[19px] lg:leading-[29px]">
             WHO GOT
             <br className="md:hidden" />
