@@ -54,7 +54,7 @@ const About = () => {
         />
       </section>
       <div className="h-[52px] lg:h-[86px] pt-1.5 pb-[9px] bg-accent md:mt-9 lg:mt-10">
-        <InfiniteMovingCards items={titles} />
+        <InfiniteMovingCards items={titles} pauseOnHover={false} />
       </div>
     </>
   );
