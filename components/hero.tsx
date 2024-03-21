@@ -3,7 +3,7 @@ import Logo from "./ui/logo";
 
 const Hero = () => {
   return (
-    <div className="pt-14 md:px-4 lg:pt-4">
+    <div className="pt-[54px] md:px-4 lg:pt-4">
       <section className="bg-accent w-full h-[542px] md:h-[421px] lg:h-[677px] rounded-xl pt-4 px-2 md:pb-[35px] pb-[19px] md:px-[72px] md:pt-[104px] lg:px-[96px] lg:pt-[197px] md:relative">
         {/* <Logo /> */}
         <div className="flex flex-col sm:items-center md:items-start">
@@ -26,12 +26,15 @@ const Hero = () => {
           />
           <div className="flex flex-col-reverse items-center md:flex-col w-full md:items-end md:mt-[-24px]">
             <p className="w-[217px] md:w-[190px] lg:w-[337px] md:mb-4 lg:mb-7 text-center md:text-justify text-secondary text-xs font-messinaSans uppercase leading-[14px]">
-              {"‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎"} Yacht Ape is a collection of unique digital
-              apes that you can own in NFT format
+              <span className="hidden md:inline-block">
+                {"‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎"}
+              </span>
+              Yacht Ape is a collection of unique digital apes that you can own
+              in NFT format
             </p>
             <button
               type="button"
-              className="w-[216px] h-[41px] md:w-[190px] md:h-[41px] md:px-[61px] px-[70px] pt-2.5 pb-3 mb-3 bg-secondary bg-opacity-10 rounded-lg backdrop-blur-md justify-center items-center relative top-[-4px] text-secondary text-base font-black leading-[19px] "
+              className="w-[216px] h-[41px] md:w-[190px] md:h-[41px] md:px-[61px] px-[70px] pt-2.5 pb-3 mb-3 bg-[rgba(30, 30, 30, 0.1)] bg-opacity-10 rounded-lg backdrop-blur-md justify-center items-center relative top-[-4px] text-secondary text-base font-black leading-[19px] "
             >
               MEET APES
             </button>
