@@ -1,5 +1,5 @@
 import BurgerMenu from "./ui/burger-menu";
-import HeaderMenuItem from "./ui/header-menu-item";
+import HeaderSocialItem from "./ui/header-social-item";
 import Logo from "./ui/logo";
 
 const socialMediaItems = [
@@ -25,7 +25,7 @@ const Header = () => {
       </div>
       <ul className="absolute flex flex-col right-2 md:right-3 lg:right-4 top-[64px] md:top-[68px] lg:top-[120px] gap-2 lg:gap-4">
         {socialMediaItems.map((item, index) => {
-          return <HeaderMenuItem key={index} icon={item.icon} />;
+          return <HeaderSocialItem key={index} icon={item.icon} />;
         })}
       </ul>
     </header>
