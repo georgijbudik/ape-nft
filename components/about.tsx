@@ -18,11 +18,9 @@ const About = () => {
     <>
       <section className="container pt-[60px] md:pt-20 md:relative lg:pt-[120px]">
         <div className="md:flex md:justify-between md:mb-[68px] lg:mb-14">
-          <h2 className="w-[216px] md:w-[269px] lg:w-[538px] mb-[6px]">
-            <span className="text-primary text-[40px] md:text-6xl lg:text-[120px] font-black uppercase leading-10 md:leading-[60px] lg:leading-[120px]">
-              a Story that started with
-            </span>
-            <span className="text-accent text-[40px] md:text-6xl lg:text-[120px] font-black uppercase leading-10 md:leading-[60px] lg:leading-[120px]">
+          <h2 className="w-[216px] md:w-[269px] lg:w-[538px] mb-[6px] text-[40px] md:text-6xl lg:text-[120px] mt-[-8px] font-black uppercase leading-10 md:leading-[60px] lg:leading-[120px]">
+            <span className="text-primary">a Story that started with</span>
+            <span className="text-accent">
               {" "}
               one simple
               <br className="md:hidden" />
