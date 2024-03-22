@@ -107,7 +107,7 @@ const MintForm = () => {
         />
         <button
           type="submit"
-          className="w-full h-[41px] text-primary pt-2.5 pb-3 bg-accent rounded-lg justify-center items-center uppercase"
+          className="w-full h-[41px] text-primary pt-2.5 pb-3 bg-accent rounded-lg justify-center items-center uppercase hover:text-secondary transition-all duration-300"
         >
           Mint
         </button>
