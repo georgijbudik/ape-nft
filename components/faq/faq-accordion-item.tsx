@@ -4,6 +4,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 interface IFaqAccordionItemProps {
@@ -54,17 +55,28 @@ const FaqAccordionItem = ({
         <p className="w-[169px] md:w-[339px] lg:w-[635px] text-primary text-xs lg:text-base text-left font-normal font-messinaSans uppercase leading-[14px] lg:leading-[19px]">
           {answer}
         </p>
-        <Image
-          src={path}
-          alt="Fancy ape"
-          width={248}
-          height={282}
-          className={cn(
-            "hidden",
-            isSelected &&
-              "md:absolute md:block origin-top-left rotate-[-16deg] md:w-[148px] md:h-[183px] lg:w-[248px] lg:h-[282px] md:left-0 md:top-3"
-          )}
-        />
+        <motion.div
+          className="absolute md:left-0 md:top-3"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+        >
+          <Image
+            src={path}
+            alt="Fancy ape"
+            width={248}
+            height={282}
+            className={cn(
+              "hidden",
+              isSelected &&
+                "md:block origin-top-left rotate-[-16deg] md:w-[148px] md:h-[183px] lg:w-[248px] lg:h-[282px]"
+            )}
+          />
+        </motion.div>
       </AccordionContent>
     </AccordionItem>
   );
