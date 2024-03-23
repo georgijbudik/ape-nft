@@ -1,21 +1,22 @@
-import MindMapItem from "./ui/mind-map-item";
-import Title from "./ui/title";
-import MindMapSwiper from "./mind-map/mind-map-swiper";
+"use client";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Pagination from "../ui/pagination";
+import MindMapItem from "../ui/mind-map-item";
 import { mindMapItems } from "@/constants";
+import "swiper/css";
+import "swiper/css/navigation";
 
-const MindMap = () => {
+const MindMapSwiper = () => {
   return (
-    <section
-      id="mind-map"
-      className="container pt-[60px] md:pt-20 lg:pt-[120px]"
-    >
-      <Title>Mind map</Title>
-      <div className="hidden md:grid md:grid-cols-2 md:gap-6">
-        {mindMapItems.map((item, index) => {
-          return (
-            <MindMapItem key={index} text={item.text} title={item.title} />
-          );
-        })}
+    <Swiper className="mySwiper" spaceBetween={24}>
+      {mindMapItems.map((item, index) => {
+        return (
+          <SwiperSlide key={index}>
+            <MindMapItem text={item.text} title={item.title} />
+          </SwiperSlide>
+        );
+      })}
+      <SwiperSlide>
         <a
           href="https://boredapeyachtclub.com/"
           target="blank"
@@ -24,7 +25,7 @@ const MindMap = () => {
         >
           <div className="w-[216px] h-[242px] md:w-[284px] lg:w-[504px] lg:h-[480px] px-3 py-6 md:p-6 bg-accent rounded-xl md:rounded-2xl lg:rounded-3xl flex-col justify-between inline-flex">
             <div className="flex justify-end pr-3 lg:pr-0">
-              <svg className="w-[36px] h-[36px] lg:w-12 lg:h-12 stroke-primary group-hover:translate-y-[-15px] group-hover:translate-x-[12px] transition-all duration-300">
+              <svg className="w-[36px] h-[36px] lg:w-12 lg:h-12 stroke-primary group-hover:translate-y-[-15px] transition-all duration-300">
                 <use xlinkHref="/icons/sprite.svg#icon-arrow"></use>
               </svg>
             </div>
@@ -37,12 +38,10 @@ const MindMap = () => {
             </div>
           </div>
         </a>
-      </div>
-      <div className="md:hidden">
-        <MindMapSwiper />
-      </div>
-    </section>
+      </SwiperSlide>
+      <Pagination />
+    </Swiper>
   );
 };
 
-export default MindMap;
+export default MindMapSwiper;

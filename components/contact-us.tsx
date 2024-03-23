@@ -4,7 +4,7 @@ import Title from "./ui/title";
 const ContactUs = () => {
   return (
     <section
-      id="contact-us"
+      id="mint"
       className="container flex flex-col items-center pt-[60px] md:pt-20 lg:pt-[120px]"
     >
       <Title>Are you in?</Title>
