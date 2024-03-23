@@ -38,9 +38,9 @@ const sheetVariants = cva(
         top: "inset-x-0 top-0 border-b data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top",
         bottom:
           "inset-x-0 bottom-0 border-t data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom",
-        left: "inset-y-0 left-0 h-full w-3/4 border-r data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left sm:max-w-sm",
+        left: "inset-y-0 left-0 w-full h-full data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left",
         right:
-          "inset-y-0 right-0 h-full w-3/4  border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm",
+          "inset-y-0 right-0 h-full w-full data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right",
       },
     },
     defaultVariants: {
@@ -65,8 +65,16 @@ const SheetContent = React.forwardRef<
       {...props}
     >
       {children}
-      <SheetPrimitive.Close className="absolute right-4 top-[62px] rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary">
-        <BurgerMenu label="CLOSE" />
+      <SheetPrimitive.Close
+        asChild
+        className="absolute right-4 top-[62px] focus:outline-none disabled:pointer-events-none data-[state=open]:bg-secondary"
+      >
+        <button
+          type="button"
+          className="w-12 h-12 lg:w-20 lg:h-20 text-primary text-xs rounded-lg lg:text-base bg-white bg-opacity-10 font-semibold font-messinaSans leading-[14px] hover:underline hover:text-accent transition-all duration-300"
+        >
+          CLOSE
+        </button>
       </SheetPrimitive.Close>
     </SheetPrimitive.Content>
   </SheetPortal>
