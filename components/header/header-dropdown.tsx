@@ -7,30 +7,12 @@ import {
 } from "../ui/dropdown-menu";
 import { BURGER_MENU_LINKS } from "@/constants";
 import BurgerMenuLink from "./burger-menu-link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { cn } from "@/lib/utils";
 
-const HeaderDropDown = () => {
+const HeaderDropDown = ({ canChangeColor }: { canChangeColor: boolean }) => {
   const [isModalOpen, setModalOpen] = useState(false);
-  const [canChangeColor, setCanChangeColor] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const about = document.getElementById("about");
-      const rect = about!.getBoundingClientRect();
-      if (rect.top <= 102) {
-        setCanChangeColor(true);
-      } else {
-        setCanChangeColor(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   const onToggleOpen = () => {
     setModalOpen((prev) => !prev);
   };

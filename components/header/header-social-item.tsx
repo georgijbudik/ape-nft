@@ -4,18 +4,21 @@ interface IHeaderSocialItemProps {
   isModalOpen?: boolean;
   icon: string;
   link: string;
+  canChangeColor?: boolean;
 }
 
 const HeaderSocialItem = ({
   isModalOpen,
   icon,
   link,
+  canChangeColor,
 }: IHeaderSocialItemProps) => {
   return (
     <li
       className={cn(
         "w-12 h-12 lg:w-20 lg:h-20 z-10 bg-stone-900 bg-opacity-10 rounded-lg backdrop-blur-md justify-center items-center gap-2 inline-flex group hover:cursor-pointer",
-        isModalOpen && "bg-white"
+        isModalOpen && "bg-white",
+        canChangeColor && "bg-white"
       )}
     >
       <a
@@ -27,7 +30,8 @@ const HeaderSocialItem = ({
         <svg
           className={cn(
             "w-4 h-4 md:w-6 md:h-6 group-hover:fill-primary transition-all duration-300",
-            isModalOpen && "fill-primary group-hover:fill-accent"
+            isModalOpen && "fill-primary group-hover:fill-accent",
+            canChangeColor && "fill-primary group-hover:fill-accent"
           )}
         >
           <use xlinkHref={`/icons/sprite.svg#${icon}`}></use>

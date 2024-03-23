@@ -25,6 +25,7 @@ const Hero = () => {
               width={463}
               height={612}
               className="w-[216px] h-[284px] md:w-[283px] md:h-[386px] lg:w-[463px] lg:h-[612px]"
+              priority
             />
           </div>
           <div className="flex flex-col-reverse items-center md:flex-col w-full md:items-end md:mt-[-24px]">
