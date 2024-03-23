@@ -22,8 +22,8 @@ export const metadata: Metadata = {
 
       {
         media: "(prefers-color-scheme: dark)",
-        url: "/icons/favicon-dark.svg",
-        href: "/icons/favicon-dark.svg",
+        url: "/icons/favicon.svg",
+        href: "/icons/favicon.svg",
       },
     ],
   },
