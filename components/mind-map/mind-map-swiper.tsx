@@ -2,14 +2,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import Pagination from "../ui/pagination";
 import MindMapItem from "../ui/mind-map-item";
-import { mindMapItems } from "@/constants";
 import "swiper/css";
 import "swiper/css/navigation";
+import { MIND_MAP_ITEMS } from "@/constants";
 
 const MindMapSwiper = () => {
   return (
     <Swiper className="mySwiper" spaceBetween={24}>
-      {mindMapItems.map((item, index) => {
+      {MIND_MAP_ITEMS.map((item, index) => {
         return (
           <SwiperSlide key={index}>
             <MindMapItem text={item.text} title={item.title} />

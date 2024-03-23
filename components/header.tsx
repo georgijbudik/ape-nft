@@ -1,4 +1,3 @@
-import { burgerMenuLinks } from "@/constants";
 import BurgerMenu from "./ui/burger-menu";
 import Logo from "./ui/logo";
 import {
@@ -10,6 +9,7 @@ import {
   SheetTrigger,
 } from "./ui/sheet";
 import HeaderSocialList from "./ui/header-social-list";
+import { BURGER_MENU_LINKS } from "@/constants";
 
 const Header = () => {
   return (
@@ -35,7 +35,7 @@ const Header = () => {
           <HeaderSocialList isModalOpen />
           <div className="flex flex-col h-full justify-between">
             <ul className="flex flex-col items-center gap-4">
-              {burgerMenuLinks.map((link) => {
+              {BURGER_MENU_LINKS.map((link) => {
                 return (
                   <SheetClose asChild key={link.title}>
                     <a

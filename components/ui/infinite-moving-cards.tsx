@@ -1,18 +1,15 @@
 "use client";
 
+import { ABOUT_TITLES } from "@/constants";
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
-  items,
   direction = "left",
   speed = "fast",
   pauseOnHover = true,
   className,
 }: {
-  items: {
-    title: string;
-  }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
@@ -83,7 +80,7 @@ export const InfiniteMovingCards = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items.map((item, idx) => (
+        {ABOUT_TITLES.map((item, idx) => (
           <li className="max-w-full flex items-center" key={idx}>
             <div
               aria-hidden="true"

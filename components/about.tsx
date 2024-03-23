@@ -1,18 +1,6 @@
 import Image from "next/image";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
-const titles = [
-  {
-    title: "Have no limits",
-  },
-  {
-    title: "Destroy stereotypes",
-  },
-  {
-    title: "Break rules",
-  },
-];
-
 const About = () => {
   return (
     <>
@@ -55,7 +43,7 @@ const About = () => {
         />
       </section>
       <div className="h-[52px] lg:h-[86px] pt-1.5 pb-[9px] bg-accent md:mt-9 lg:mt-10">
-        <InfiniteMovingCards items={titles} pauseOnHover={false} />
+        <InfiniteMovingCards pauseOnHover={false} />
       </div>
     </>
   );

@@ -5,7 +5,7 @@ import Pagination from "../ui/pagination";
 import { useMediaQuery } from "usehooks-ts";
 import "swiper/css";
 import "swiper/css/navigation";
-import { collectionItems } from "@/constants";
+import { COLLECTION_ITEMS } from "@/constants";
 
 const CollectionSwiper = () => {
   const tabletQuery = useMediaQuery("(min-width: 768px)");
@@ -18,7 +18,7 @@ const CollectionSwiper = () => {
       spaceBetween={24}
       slidesPerView={slidesPerView}
     >
-      {collectionItems.map((item, index) => {
+      {COLLECTION_ITEMS.map((item, index) => {
         return (
           <SwiperSlide key={index}>
             <Image

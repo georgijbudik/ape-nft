@@ -1,7 +1,7 @@
 import MindMapItem from "./ui/mind-map-item";
 import Title from "./ui/title";
 import MindMapSwiper from "./mind-map/mind-map-swiper";
-import { mindMapItems } from "@/constants";
+import { MIND_MAP_ITEMS } from "@/constants";
 
 const MindMap = () => {
   return (
@@ -11,7 +11,7 @@ const MindMap = () => {
     >
       <Title>Mind map</Title>
       <div className="hidden md:grid md:grid-cols-2 md:gap-6">
-        {mindMapItems.map((item, index) => {
+        {MIND_MAP_ITEMS.map((item, index) => {
           return (
             <MindMapItem key={index} text={item.text} title={item.title} />
           );

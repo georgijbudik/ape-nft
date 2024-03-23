@@ -1,7 +1,7 @@
-import { socialMediaItems } from "@/constants";
 import React from "react";
 import HeaderSocialItem from "./header-social-item";
 import { cn } from "@/lib/utils";
+import { SOCIAL_MEDIA_ITEMS } from "@/constants";
 
 const HeaderSocialList = ({ isModalOpen }: { isModalOpen?: boolean }) => {
   return (
@@ -12,7 +12,7 @@ const HeaderSocialList = ({ isModalOpen }: { isModalOpen?: boolean }) => {
           "right-4 top-[118px] md:top-[122px] lg:top-[160px] md:right-4"
       )}
     >
-      {socialMediaItems.map((item, index) => {
+      {SOCIAL_MEDIA_ITEMS.map((item, index) => {
         return (
           <HeaderSocialItem
             isModalOpen={isModalOpen}
