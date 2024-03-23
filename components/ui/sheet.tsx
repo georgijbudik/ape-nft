@@ -5,7 +5,6 @@ import * as SheetPrimitive from "@radix-ui/react-dialog";
 import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
-import BurgerMenu from "./burger-menu";
 
 const Sheet = SheetPrimitive.Root;
 

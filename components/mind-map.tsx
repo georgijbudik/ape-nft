@@ -1,4 +1,4 @@
-import MindMapItem from "./ui/mind-map-item";
+import MindMapItem from "./mind-map/mind-map-item";
 import Title from "./ui/title";
 import MindMapSwiper from "./mind-map/mind-map-swiper";
 import { MIND_MAP_ITEMS } from "@/constants";

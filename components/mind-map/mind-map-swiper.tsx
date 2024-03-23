@@ -1,7 +1,7 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Pagination from "../ui/pagination";
-import MindMapItem from "../ui/mind-map-item";
+import MindMapItem from "./mind-map-item";
 import "swiper/css";
 import "swiper/css/navigation";
 import { MIND_MAP_ITEMS } from "@/constants";

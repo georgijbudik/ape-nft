@@ -1,4 +1,9 @@
-const MindMapItem = ({ text, title }: { text: string; title: string }) => {
+interface IMindMapItemProps {
+  text: string;
+  title: string;
+}
+
+const MindMapItem = ({ text, title }: IMindMapItemProps) => {
   return (
     <div className="w-[216px] h-[242px] md:w-[284px] lg:w-[504px] lg:h-[480px] flex flex-col justify-between py-6 px-3 md:p-6 bg-secondary gap-6 rounded-xl md:rounded-2xl lg:rounded-3xl">
       <div className="flex md:justify-end">

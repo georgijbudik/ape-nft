@@ -1,4 +1,4 @@
-import MintForm from "./ui/mint-form";
+import MintForm from "./contact/mint-form";
 import Title from "./ui/title";
 
 const ContactUs = () => {

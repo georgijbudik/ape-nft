@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
+import { InfiniteMovingCards } from "./about/infinite-moving-cards";
 
 const About = () => {
   return (

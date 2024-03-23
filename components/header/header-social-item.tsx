@@ -1,12 +1,11 @@
 import { cn } from "@/lib/utils";
 
-const HeaderSocialItem = ({
-  isModalOpen,
-  icon,
-}: {
+interface IHeaderSocialItemProps {
   isModalOpen?: boolean;
   icon: string;
-}) => {
+}
+
+const HeaderSocialItem = ({ isModalOpen, icon }: IHeaderSocialItemProps) => {
   return (
     <li
       className={cn(

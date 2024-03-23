@@ -1,4 +1,4 @@
-import BurgerMenu from "./ui/burger-menu";
+import BurgerMenu from "./header/burger-menu";
 import Logo from "./ui/logo";
 import {
   Sheet,
@@ -8,7 +8,7 @@ import {
   SheetHeader,
   SheetTrigger,
 } from "./ui/sheet";
-import HeaderSocialList from "./ui/header-social-list";
+import HeaderSocialList from "./header/header-social-list";
 import { BURGER_MENU_LINKS } from "@/constants";
 
 const Header = () => {
