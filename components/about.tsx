@@ -9,7 +9,7 @@ const About = () => {
         className="container pt-[60px] md:pt-20 md:relative lg:pt-[120px]"
       >
         <div className="md:flex md:justify-between md:mb-[68px] lg:mb-14">
-          <h2 className="w-[216px] md:w-[269px] lg:w-[538px] mb-[6px] text-[40px] md:text-6xl lg:text-[120px] mt-[-8px] font-black uppercase leading-10 md:leading-[60px] lg:leading-[120px]">
+          <h2 className="w-[216px] md:w-[269px] lg:w-[538px] mb-[6px] text-[40px] md:text-6xl lg:text-[120px] md:mt-[-12px] lg:mt-[-20px] font-black uppercase leading-10 md:leading-[60px] lg:leading-[120px]">
             <span className="text-primary">a Story that started with</span>
             <span className="text-accent">
               {" "}
@@ -26,7 +26,7 @@ const About = () => {
           </p>
         </div>
         <div className="w-[216px] md:w-[269px] lg:w-[417px] flex flex-col items-center mb-10 md:mb-0">
-          <svg className="w-6 h-6 stroke-primary mb-4 md:mb-6 lg:mb-9">
+          <svg className="w-6 h-6 lg:w-9 lg:h-9 stroke-primary mb-4 md:mb-6 lg:mb-9">
             <use xlinkHref="/icons/sprite.svg#icon-cross"></use>
           </svg>
           <p className="text-center text-primary text-xs md:text-base lg:text-2xl font-normal font-messinaSans uppercase leading-[14px] md:leading-[19px] lg:leading-[29px]">

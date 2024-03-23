@@ -1,16 +1,28 @@
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
-const BurgerMenuLink = ({ label, href }: { label: string; href: string }) => {
+interface IBurgerMenuLinkProps {
+  label: string;
+  href: string;
+  canChangeColor: boolean;
+}
+
+const BurgerMenuLink = ({
+  label,
+  href,
+  canChangeColor,
+}: IBurgerMenuLinkProps) => {
   return (
-    <div className="w-12 h-12 lg:w-20 lg:h-20 bg-stone-900 bg-opacity-10 backdrop-blur-md justify-center items-center inline-flex group hover:cursor-pointer">
-      <a
+    <div className="h-full w-full justify-center items-center flex group hover:cursor-pointer">
+      <Link
         href={href}
         className={cn(
-          "text-stone-900 text-xs lg:text-base uppercase font-semibold font-messinaSans leading-[14px] group-hover:underline group-hover:text-primary transition-all duration-300"
+          "w-full h-full text-stone-900 justify-center items-center flex text-xs lg:text-base uppercase font-semibold font-messinaSans leading-[14px] group-hover:underline group-hover:text-primary transition-all duration-300",
+          canChangeColor && "text-primary"
         )}
       >
         {label}
-      </a>
+      </Link>
     </div>
   );
 };

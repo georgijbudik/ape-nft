@@ -14,7 +14,7 @@ const HeaderSocialItem = ({
   return (
     <li
       className={cn(
-        "w-12 h-12 lg:w-20 lg:h-20 bg-stone-900 bg-opacity-10 rounded-lg backdrop-blur-md justify-center items-center gap-2 inline-flex group hover:cursor-pointer",
+        "w-12 h-12 lg:w-20 lg:h-20 z-10 bg-stone-900 bg-opacity-10 rounded-lg backdrop-blur-md justify-center items-center gap-2 inline-flex group hover:cursor-pointer",
         isModalOpen && "bg-white"
       )}
     >
