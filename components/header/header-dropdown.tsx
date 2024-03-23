@@ -17,8 +17,11 @@ const HeaderDropDown = () => {
       <DropdownMenuContent side="left" className="flex">
         {BURGER_MENU_LINKS.map((link, index) => {
           return (
-            <DropdownMenuItem className="first:rounded-l-xl last:rounded-r-xl">
-              <BurgerMenuLink key={index} label={link.title} href={link.href} />
+            <DropdownMenuItem
+              className="first:rounded-l-xl last:rounded-r-xl"
+              key={index}
+            >
+              <BurgerMenuLink label={link.title} href={link.href} />
             </DropdownMenuItem>
           );
         })}
