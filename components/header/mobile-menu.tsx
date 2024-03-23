@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 const MobileMenu = ({ canChangeColor }: { canChangeColor: boolean }) => {
   return (
     <Sheet>
-      <div className="fixed right-4 top-16 md:top-3 md:right-3 lg:top-6 lg:right-4 md:hidden">
+      <div className="fixed right-4 top-16 md:top-3 md:right-3 lg:top-6 md:hidden">
         <SheetTrigger asChild>
           <div
             className={cn(

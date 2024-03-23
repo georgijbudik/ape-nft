@@ -4,7 +4,7 @@ const SOCIAL_MEDIA_ITEMS = [
     link: "https://discord.com/",
   },
   {
-    icon: "icon-ship",
+    icon: "icon-opensea",
     link: "https://opensea.io/collection/boredapeyachtclub",
   },
   {
