@@ -15,6 +15,7 @@ const HeaderSocialList = ({ isModalOpen }: { isModalOpen?: boolean }) => {
       {SOCIAL_MEDIA_ITEMS.map((item, index) => {
         return (
           <HeaderSocialItem
+            link={item.link}
             isModalOpen={isModalOpen}
             key={index}
             icon={item.icon}

@@ -3,9 +3,14 @@ import { cn } from "@/lib/utils";
 interface IHeaderSocialItemProps {
   isModalOpen?: boolean;
   icon: string;
+  link: string;
 }
 
-const HeaderSocialItem = ({ isModalOpen, icon }: IHeaderSocialItemProps) => {
+const HeaderSocialItem = ({
+  isModalOpen,
+  icon,
+  link,
+}: IHeaderSocialItemProps) => {
   return (
     <li
       className={cn(
@@ -13,7 +18,12 @@ const HeaderSocialItem = ({ isModalOpen, icon }: IHeaderSocialItemProps) => {
         isModalOpen && "bg-white"
       )}
     >
-      <button type="button">
+      <a
+        href={link}
+        target="blank"
+        referrerPolicy="no-referrer"
+        className="w-full h-full flex items-center justify-center"
+      >
         <svg
           className={cn(
             "w-4 h-4 md:w-6 md:h-6 group-hover:fill-primary transition-all duration-300",
@@ -22,7 +32,7 @@ const HeaderSocialItem = ({ isModalOpen, icon }: IHeaderSocialItemProps) => {
         >
           <use xlinkHref={`/icons/sprite.svg#${icon}`}></use>
         </svg>
-      </button>
+      </a>
     </li>
   );
 };

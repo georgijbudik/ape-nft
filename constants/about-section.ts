@@ -10,4 +10,6 @@ const ABOUT_TITLES = [
   },
 ];
 
-export { ABOUT_TITLES };
+const LEARN_MORE_LINK = "https://boredapeyachtclub.com/";
+
+export { ABOUT_TITLES, LEARN_MORE_LINK };

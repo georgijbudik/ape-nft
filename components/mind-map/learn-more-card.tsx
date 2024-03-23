@@ -1,7 +1,9 @@
+import { LEARN_MORE_LINK } from "@/constants";
+
 const LearnMoreCard = () => {
   return (
     <a
-      href="https://boredapeyachtclub.com/"
+      href={LEARN_MORE_LINK}
       target="blank"
       referrerPolicy="no-referrer"
       className="group"

@@ -1,12 +1,15 @@
 const SOCIAL_MEDIA_ITEMS = [
   {
     icon: "icon-discord",
+    link: "https://discord.com/",
   },
   {
     icon: "icon-ship",
+    link: "https://opensea.io/collection/boredapeyachtclub",
   },
   {
     icon: "icon-twitter",
+    link: "https://twitter.com/BoredApeYC",
   },
 ];
 
@@ -16,7 +19,7 @@ const BURGER_MENU_LINKS = [
     href: "#about",
   },
   {
-    title: "Mind-Map",
+    title: "M-Map",
     href: "#mind-map",
   },
   {
