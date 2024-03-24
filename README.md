@@ -96,7 +96,7 @@ Github - https://github.com/georgijbudik
 
 LinkedIn - https://www.linkedin.com/in/georgii-budik
 
-Project Link: https://github.com/your_username/ape-nft
+Project Link: https://github.com/georgijbudik/ape-nft
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
