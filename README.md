@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/georgijbudik/ape-nft">
-    <img src="/public/images/og-image.png" alt="OG image" width="1200" height="500">
+    <img src="/public/images/og-image.png" alt="OG image" width="1200" height="530">
   </a>
 
   <h3 align="center">Ape NFT</h3>
