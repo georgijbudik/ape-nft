@@ -9,7 +9,10 @@ import LearnMoreCard from "./learn-more-card";
 
 const MindMapSwiper = () => {
   return (
-    <Swiper className="mySwiper" spaceBetween={24}>
+    <Swiper
+      className="mySwiper w-[216px] md:w-[284px] lg:w-[240px]"
+      spaceBetween={24}
+    >
       {MIND_MAP_ITEMS.map((item, index) => {
         return (
           <SwiperSlide key={index}>

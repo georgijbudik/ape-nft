@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="px-2 md:px-4">
       <div className="bg-accent w-full h-[542px] md:h-[421px] lg:h-[677px] rounded-xl pt-9 px-2 md:pb-[35px] pb-[19px] md:px-[72px] md:pt-[124px] lg:px-[96px] lg:pt-[197px] relative">
         <Header />
-        <div className="mx-auto max-w-[217px] md:max-w-[592px] lg:max-w-[1021px] flex flex-col items-center md:items-start">
+        <div className="mx-auto xs:max-w-full sm:max-w-[217px] md:max-w-[592px] lg:max-w-[1021px] flex flex-col items-center md:items-start">
           <p className="text-secondary text-center md:text-left w-full text-base md:text-xl lg:text-2xl lg:leading-10 font-biroScript leading-[27px] md:leading-[33px]">
             diD yOu seE iT ?
           </p>
@@ -29,7 +29,7 @@ const Hero = () => {
             />
           </div>
           <div className="flex flex-col-reverse items-center md:flex-col w-full md:items-end md:mt-[-24px]">
-            <p className="w-[217px] md:w-[190px] lg:w-[337px] md:mb-4 lg:mb-7 text-center md:text-justify md:first-letter:ml-20 text-secondary text-xs lg:text-base font-messinaSans uppercase leading-[14px]">
+            <p className="xs:w-full w-[217px] md:w-[190px] lg:w-[337px] md:mb-4 lg:mb-7 text-center md:text-justify md:first-letter:ml-20 text-secondary text-xs lg:text-base font-messinaSans uppercase leading-[14px]">
               Yacht Ape is a collection of unique digital apes that you can own
               in NFT format
             </p>

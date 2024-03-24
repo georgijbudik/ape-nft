@@ -14,7 +14,7 @@ const CollectionSwiper = () => {
   const slidesPerView = desktopQuery ? 4 : tabletQuery ? 2 : 1;
   return (
     <Swiper
-      className="mySwiper"
+      className="mySwiper w-[216px] md:w-full"
       spaceBetween={24}
       slidesPerView={slidesPerView}
     >

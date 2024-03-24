@@ -44,7 +44,7 @@ const FaqAccordionItem = ({
         </span>
         <h3
           className={cn(
-            "w-[169px] md:w-[339px] lg:w-[635px] text-primary text-xl md:text-[32px] lg:text-[64px] text-left font-black leading-tight md:leading-[36px] lg:leading-[64px] group-hover:text-accent transition-all duration-300",
+            "xs:w-full w-[169px] md:w-[339px] lg:w-[635px] text-primary text-xl md:text-[32px] lg:text-[64px] text-left font-black leading-tight md:leading-[36px] lg:leading-[64px] group-hover:text-accent transition-all duration-300",
             isSelected && "text-accent"
           )}
         >
@@ -52,7 +52,7 @@ const FaqAccordionItem = ({
         </h3>
       </AccordionTrigger>
       <AccordionContent>
-        <p className="w-[169px] md:w-[339px] lg:w-[635px] text-primary text-xs lg:text-base text-left font-normal font-messinaSans uppercase leading-[14px] lg:leading-[19px]">
+        <p className="xs:w-full w-[169px] md:w-[339px] lg:w-[635px] text-primary text-xs lg:text-base text-left font-normal font-messinaSans uppercase leading-[14px] lg:leading-[19px]">
           {answer}
         </p>
         <motion.div
