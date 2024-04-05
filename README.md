@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/georgijbudik/ape-nft">
-    <img src="/public/images/og-image.png" alt="OG image" width="1200" height="480">
+    <img src="/public/images/og-image.png" alt="OG image" width="1200" height="430">
   </a>
 
   <h3 align="center">Ape NFT</h3>
@@ -57,7 +57,11 @@ Welcome to the Ape NFT platform, where you can explore a diverse collection of c
 
 [![Next][Next.js]][Next-url]
 [![React][React.js]][React-url]
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 [![Tailwind][Tailwind-css]][Tailwind-url]
+[![Framer-motion][Framer-motion]][Framer-motion-url]
+[![Vercel][Vercel]][Vercel-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,7 +100,7 @@ Github - https://github.com/georgijbudik
 
 LinkedIn - https://www.linkedin.com/in/georgii-budik
 
-Project Link: https://github.com/your_username/ape-nft
+Project Link: https://github.com/georgijbudik/ape-nft
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,3 +111,7 @@ Project Link: https://github.com/your_username/ape-nft
 [React-url]: https://reactjs.org/
 [Tailwind-css]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
 [Tailwind-url]: https://tailwindcss.com/
+[Framer-motion]: https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue
+[Framer-motion-url]: https://www.framer.com/motion/
+[Vercel]: https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white
+[Vercel-url]: https://vercel.com/
