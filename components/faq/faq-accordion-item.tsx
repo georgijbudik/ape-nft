@@ -36,7 +36,7 @@ const FaqAccordionItem = ({
       <AccordionTrigger className="flex items-start group">
         <span
           className={cn(
-            "text-accent flex-shrink-0 text-xs md:text-base lg:text-2xl font-normal font-biroScriptUS leading-[24px] md:leading-[36px] lg:leading-[56px] mr-2 md:mr-[21px] group-hover:text-primary transition-all duration-300",
+            "text-accent flex-shrink-0 text-xs md:text-base lg:text-2xl font-normal font-biroScriptUS leading-[24px] md:leading-[36px] lg:leading-[56px] mr-2 md:mr-[21px] group-hover:text-primary group-focus:text-primary transition-all duration-300",
             isSelected && "text-primary"
           )}
         >
@@ -44,7 +44,7 @@ const FaqAccordionItem = ({
         </span>
         <h3
           className={cn(
-            "xs:w-full w-[169px] md:w-[339px] lg:w-[635px] text-primary text-xl md:text-[32px] lg:text-[64px] text-left font-black leading-tight md:leading-[36px] lg:leading-[64px] group-hover:text-accent transition-all duration-300",
+            "xs:w-full w-[169px] md:w-[339px] lg:w-[635px] text-primary text-xl md:text-[32px] lg:text-[64px] text-left font-black leading-tight md:leading-[36px] lg:leading-[64px] group-hover:text-accent group-focus:text-accent transition-all duration-300",
             isSelected && "text-accent"
           )}
         >

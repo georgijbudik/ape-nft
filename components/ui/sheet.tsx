@@ -70,7 +70,7 @@ const SheetContent = React.forwardRef<
       >
         <button
           type="button"
-          className="w-12 h-12 lg:w-20 lg:h-20 text-primary text-xs rounded-lg lg:text-base bg-white bg-opacity-10 font-semibold font-messinaSans leading-[14px] hover:underline hover:text-accent transition-all duration-300"
+          className="w-12 h-12 lg:w-20 lg:h-20 text-primary text-xs rounded-lg lg:text-base bg-white bg-opacity-10 font-semibold font-messinaSans leading-[14px] hover:underline focus:underline hover:text-accent focus:text-accent transition-all duration-300"
         >
           CLOSE
         </button>

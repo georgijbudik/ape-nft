@@ -21,7 +21,7 @@ const HeaderDropDown = ({ canChangeColor }: { canChangeColor: boolean }) => {
       <DropdownMenuTrigger asChild>
         <button
           className={cn(
-            "h-12 w-12 lg:h-20 lg:w-20 bg-neutral-900 bg-opacity-10 rounded-tr-xl rounded-br-xl rounded-l-lg rounded-r-lg lg:rounded-r-[12px] lg:rounded-l-[12px] backdrop-blur-md flex justify-center items-center text-neutral-900 text-xs lg:text-base font-semibold font-messinaSans leading-[14px] lg:leading-[19px] uppercase hover:underline hover:text-primary transition-all duration-300",
+            "h-12 w-12 lg:h-20 lg:w-20 bg-neutral-900 bg-opacity-10 rounded-tr-xl rounded-br-xl rounded-l-lg rounded-r-lg lg:rounded-r-[12px] lg:rounded-l-[12px] backdrop-blur-md flex justify-center items-center text-neutral-900 text-xs lg:text-base font-semibold font-messinaSans leading-[14px] lg:leading-[19px] uppercase hover:underline focus:underline hover:text-primary focus:text-primary transition-all duration-300",
             isModalOpen && "rounded-l-none lg:rounded-l-none",
             canChangeColor && "text-primary bg-white"
           )}

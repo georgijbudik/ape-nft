@@ -16,7 +16,7 @@ const BurgerMenuBtn = ({
     >
       <button
         type="button"
-        className="text-stone-900 text-xs lg:text-base uppercase font-semibold font-messinaSans leading-[14px] lg:leading-[19px] group-hover:underline group-hover:text-primary transition-all duration-300"
+        className="text-stone-900 text-xs lg:text-base uppercase font-semibold font-messinaSans leading-[14px] lg:leading-[19px] group-hover:underline group-focus:underline group-hover:text-primary group-focus:text-primary transition-all duration-300"
       >
         {label}
       </button>

@@ -33,12 +33,12 @@ const Hero = () => {
               Yacht Ape is a collection of unique digital apes that you can own
               in NFT format
             </p>
-            <button
-              type="button"
-              className="w-[216px] h-[41px] md:w-[190px] md:h-[41px] md:px-[61px] px-[70px] lg:w-[337px] lg:h-[70px] pt-2.5 pb-3 lg:pt-4 lg:pb-5 mb-3 md:mb-0 bg-stone-900 bg-opacity-10 rounded-lg md:rounded-xl backdrop-blur-md justify-center items-center relative top-[-4px] text-secondary text-base lg:text-[28px] font-black leading-[19px] lg:leading-[34px] hover:text-primary transition-all duration-300 "
+            <Link
+              href="#mint"
+              className="w-[216px] h-[41px] md:w-[190px] md:h-[41px] md:px-[61px] px-[70px] lg:w-[337px] lg:h-[70px] pt-2.5 pb-3 lg:pt-4 lg:pb-5 mb-3 md:mb-0 bg-stone-900 bg-opacity-10 rounded-lg md:rounded-xl backdrop-blur-md text-center relative top-[-4px] text-secondary text-base lg:text-[28px] font-black leading-[19px] lg:leading-[34px] hover:text-primary focus:text-primary transition-all duration-300"
             >
-              <Link href="#mint">MEET APES</Link>
-            </button>
+              MEET APES
+            </Link>
           </div>
         </div>
       </div>

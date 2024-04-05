@@ -4,13 +4,13 @@ const LearnMoreCard = () => {
   return (
     <a
       href={LEARN_MORE_LINK}
-      target="blank"
-      referrerPolicy="no-referrer"
+      target="_blank"
+      rel="noopener noreferrer nofollow"
       className="group"
     >
       <div className="w-[216px] h-[242px] md:w-[284px] lg:w-[504px] lg:h-[480px] px-3 py-6 md:p-6 bg-accent rounded-xl md:rounded-2xl lg:rounded-3xl flex-col justify-between inline-flex">
         <div className="flex justify-end pr-3 md:pr-0">
-          <svg className="w-[36px] h-[36px] lg:w-12 lg:h-12 stroke-primary group-hover:translate-x-[12px] group-hover:translate-y-[-15px] transition-all duration-300">
+          <svg className="w-[36px] h-[36px] lg:w-12 lg:h-12 stroke-primary group-hover:translate-x-[12px] group-focus:translate-x-[12px] group-hover:translate-y-[-15px] group-focus:translate-y-[-15px] transition-all duration-300">
             <use xlinkHref="/icons/sprite.svg#icon-arrow"></use>
           </svg>
         </div>

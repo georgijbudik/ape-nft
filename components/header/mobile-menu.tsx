@@ -25,8 +25,9 @@ const MobileMenu = ({ canChangeColor }: { canChangeColor: boolean }) => {
             <button
               type="button"
               className={cn(
-                "text-stone-900 text-xs lg:text-base uppercase font-semibold font-messinaSans leading-[14px] lg:leading-[19px] group-hover:underline group-hover:text-primary transition-all duration-300",
-                canChangeColor && "text-white group-hover:text-accent"
+                "text-stone-900 text-xs lg:text-base uppercase font-semibold font-messinaSans leading-[14px] lg:leading-[19px] group-hover:underline group-focus:underline group-hover:text-primary group-focus:text-primary transition-all duration-300",
+                canChangeColor &&
+                  "text-white group-hover:text-accent group-focus:text-accent"
               )}
             >
               MENU
@@ -37,7 +38,7 @@ const MobileMenu = ({ canChangeColor }: { canChangeColor: boolean }) => {
       <SheetContent className="bg-[#181818]">
         <SheetHeader className="absolute top-[70px] left-4">
           <SheetClose asChild>
-            <Logo className="fill-primary group-hover:fill-accent" />
+            <Logo className="fill-primary group-hover:fill-accent group-focus:fill-accent" />
           </SheetClose>
         </SheetHeader>
         <HeaderSocialList isModalOpen />
@@ -47,6 +48,8 @@ const MobileMenu = ({ canChangeColor }: { canChangeColor: boolean }) => {
               return (
                 <SheetClose asChild key={link.title}>
                   <a
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
                     href={link.href}
                     className="h-10 text-primary text-2xl font-semibold font-messinaSans leading-[29px] uppercase"
                   >
@@ -56,7 +59,7 @@ const MobileMenu = ({ canChangeColor }: { canChangeColor: boolean }) => {
               );
             })}
           </ul>
-          <SheetFooter>
+          <SheetFooter className="flex justify-center items-center">
             <div className="w-[216px] text-center text-primary text-xs font-normal font-messinaSans uppercase leading-[14px]">
               © Yacht ape 2024 all rights reserved
             </div>

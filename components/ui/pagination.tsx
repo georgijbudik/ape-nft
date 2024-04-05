@@ -7,14 +7,14 @@ const Pagination = () => {
     <div className="flex items-center justify-center gap-12 mt-6">
       <button
         type="button"
-        className="text-primary text-2xl font-normal font-biroScript leading-normal hover:accent transition-all duration-300"
+        className="text-primary text-2xl font-normal font-biroScript leading-normal hover:text-accent focus:text-accent  transition-all duration-300"
         onClick={() => swiper.slidePrev()}
       >
         Prev
       </button>
       <button
         type="button"
-        className="text-primary text-2xl font-normal font-biroScript leading-normal hover:accent transition-all duration-300"
+        className="text-primary text-2xl font-normal font-biroScript leading-normal hover:text-accent focus:text-accent  transition-all duration-300"
         onClick={() => swiper.slideNext()}
       >
         Next

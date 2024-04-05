@@ -118,7 +118,7 @@ const MintForm = () => {
           disabled={isSubmitting}
           type="submit"
           className={cn(
-            "w-full h-[41px] lg:h-[70px] text-primary lg:text-[28px] pt-2.5 pb-3 leading-[19px] bg-accent rounded-lg lg:rounded-xl justify-center items-center uppercase hover:text-secondary transition-all duration-300",
+            "w-full h-[41px] lg:h-[70px] text-primary lg:text-[28px] pt-2.5 pb-3 leading-[19px] bg-accent rounded-lg lg:rounded-xl justify-center items-center uppercase hover:text-secondary focus:text-secondary transition-all duration-300",
             isSubmitting && "bg-[#A53041]"
           )}
         >
