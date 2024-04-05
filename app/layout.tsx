@@ -6,6 +6,7 @@ import {
   messinaSans,
   rightGrotesk,
 } from "@/utils/custom-fonts";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ape-nft-murex.vercel.app"),
@@ -54,6 +55,7 @@ export default function RootLayout({
         className={`${messinaSans.variable} ${biroScript.variable} ${biroScriptUS.variable} ${rightGrotesk.className}`}
       >
         {children}
+        <Toaster />
       </body>
     </html>
   );

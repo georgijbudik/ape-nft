@@ -16,6 +16,7 @@ import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import { formSchema } from "@/schemas";
 import { useState } from "react";
+import { toast } from "sonner";
 
 const MintForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -37,9 +38,21 @@ const MintForm = () => {
       setIsSubmitting(true);
       await new Promise((resolve) => setTimeout(resolve, 2000));
       setButtonText("minted");
+      toast.success("You have successfuly minted an NFT", {
+        style: {
+          backgroundColor: "#DC3B5A",
+          color: "#FFFFFF",
+        },
+      });
       setIsSubmitting(false);
     } catch (error) {
       setIsSubmitting(false);
+      toast.error("Error. Try again", {
+        style: {
+          backgroundColor: "#DC3B5A",
+          color: "#FFFFFF",
+        },
+      });
 
       setButtonText("error");
     } finally {
